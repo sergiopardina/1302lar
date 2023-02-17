@@ -10,6 +10,12 @@ use Illuminate\Support\Facades\Auth;
 
 class TaskController extends Controller
 {
+    public function __construct()
+    {
+        //second group example
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
